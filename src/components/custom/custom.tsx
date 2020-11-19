@@ -137,12 +137,11 @@ export function defaultObject(root: SchemaItem, form: FormInstance, element: Rea
     <span key="description" className={ styleName('object-description') }>{ description }</span>
   ];
 
+  /** TODO: Remove Or Disable Collapse by props */
   return (
-    <Collapse key={ id } className={ styleName('object-collapse') } defaultActiveKey={ [id] }>
-      <Collapse.Panel key={ id } header={ header }>
+       <div>
         { element }
-      </Collapse.Panel>
-    </Collapse>
+        </div>
   );
 }
 

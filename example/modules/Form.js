@@ -12,6 +12,7 @@ const json = {
   type: 'object',
   title: 'schema form',
   description: '这是一个通过json schema渲染的表单。',
+  layout: 'horizontal',
   properties: {
     string: stringJson,
     number: numberJson,
@@ -48,17 +49,23 @@ const value = {
 // 自定义组件
 const customComponent = {
   custom(item, form, required) {
-    return <Input placeholder="自定义组件" required={ required } addonAfter={ <IconSettingFilled /> } />;
+    return (
+      <Input
+        placeholder='自定义组件'
+        required={required}
+        addonAfter={<IconSettingFilled />}
+      />
+    );
   }
 };
 
 // 自定义表格渲染
 const customTableRender = {
   red(text, record, index, item, form) {
-    return <span style={{ color: '#f00' }}>{ text }</span>;
+    return <span style={{ color: '#f00' }}>{text}</span>;
   },
   green(text, record, index, item, form) {
-    return <span style={{ color: '#0f0' }}>{ text }</span>;
+    return <span style={{ color: '#0f0' }}>{text}</span>;
   }
 };
 
@@ -72,17 +79,20 @@ function Form(props) {
   }
 
   // cancel
-  function handleCancelClick() { /* ===== */ }
+  function handleCancelClick() {
+    /* ===== */
+  }
 
   return (
-    <SchemaForm ref={ formRef }
-      json={ json }
-      value={ value }
-      customComponent={ customComponent }
-      customTableRender={ customTableRender }
-      okText="提交"
-      onOk={ handleOkSubmit }
-      onCancel={ handleCancelClick }
+    <SchemaForm
+      ref={formRef}
+      json={json}
+      value={value}
+      customComponent={customComponent}
+      customTableRender={customTableRender}
+      okText='提交'
+      onOk={handleOkSubmit}
+      onCancel={handleCancelClick}
     />
   );
 }

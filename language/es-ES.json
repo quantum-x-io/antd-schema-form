@@ -1,0 +1,36 @@
+{
+  "formArray": {
+    "operating": "Cargando ...",
+    "operatingAdd": "Agregando información",
+    "operatingPopconfirmTitle": "¿Estas seguro de borrar esta información?",
+    "operatingEdit": "Editar",
+    "operatingDelete": "Borrar",
+    "deleteSelected": "Borrar información seleccionada",
+    "deleteSelectedText": "¿Estas seguro de borrar la información seleccionada?"
+  },
+  "formObject": {
+    "okText": "OK",
+    "cancelText": "Cancelar",
+    "addOkText": "Agregar",
+    "addCancelText": "Cerrar"
+  },
+  "rules": {
+    "required": "Esta opción es requerida",
+    "enum": "{0} no contiene este valor",
+    "string": {
+      "min": "La longitud mínima del campo es {0}.",
+      "max": "La longitud máxima del campo es",
+      "length": "La longitud del campo es {0}.",
+      "pattern": "El formato de los datos es incorrecto, el formato debe ser: {0}."
+    },
+    "number": {
+      "integer": "El valor debe ser un número entero.",
+      "minimum": "El valor debe ser mayor o igual que {0}.",
+      "maximum": "El valor debe ser menor o igual que {0}."
+    },
+    "array": {
+      "minItems": "La cantidad debe ser mayor o igual a {0}.",
+      "maxItems": "La cantidad debe ser menor o igual a {0}."
+    }
+  }
+}

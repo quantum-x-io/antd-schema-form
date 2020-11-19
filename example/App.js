@@ -10,8 +10,8 @@ import Form from './modules/Form';
 class App extends Component {
   render() {
     return (
-      <ConfigProvider locale={ zhCN }>
-        <div className={ style.box }>
+      <ConfigProvider locale={zhCN}>
+        <div className={style.box}>
           <Form />
         </div>
       </ConfigProvider>
